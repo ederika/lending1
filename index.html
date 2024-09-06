@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector(".section14-sub");
+        const items = container.querySelectorAll("p");
+
+        const thirdItem = items[2];
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                container.scrollTo({
+                  left: container.scrollWidth,
+                  behavior: "smooth",
+                });
+
+                observer.disconnect();
+              }
+            });
+          },
+          {
+            root: null,
+            threshold: 0.1,
+          }
+        );
+
+        observer.observe(thirdItem);
+      });
+    </script>
+
+    <header class="header1">
+      <div class="header1_section1">
+        <a href="#!">BUNDLE UP.</a>
+      </div>
+      <div class="header1_section1">
+        <a href="#!">MEMBERSHIP</a>
+        <a href="#!">REWARDS</a>
+      </div>
+    </header>
+
+    <div class="navigation">
+      <img class="navigation_section1" src="imgs/italic_img.svg" alt="italic" />
+      <nav class="navigation_section2">
+        <ul>
+          <li><a href="#">Featured</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Jewelry</a></li>
+          <li><a href="#">Beauty</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Pets</a></li>
+        </ul>
+      </nav>
+      <nav class="navigation_section3">
+        <a href="#">Sign In</a>
+        <img style="width: 1.5vw" src="imgs/search_img.svg" alt="search" />
+        <img style="width: 1.5vw" src="imgs/shop_img.svg" alt="basket" />
+      </nav>
+    </div>
+
+    <section class="section1">
+      <p>Luxury without labels.</p>
+    </section>
+
+    <div class="main-picture"></div>
+
+    <section class="section2">
+      <p>
+        Unbranded luxury-grade essentials<br />
+        from the same manufacturers as your<br />
+        favorite brands. No logos, no markups.
+      </p>
+      <a class="learn-more" href="#">Learn more</a>
+    </section>
+
+    <nav class="labels">
+      <ul>
+        <li><img src="imgs/vogue.svg" alt="vogue" /></li>
+        <li><img src="imgs/newyork.svg" alt="newyork" /></li>
+        <li>
+          <img src="imgs/thewallstreetyournal.svg" alt="thewallstreetyournal" />
+        </li>
+        <li><img src="imgs/foodwine.svg" alt="foodwine" /></li>
+        <li><img src="imgs/travel.svg" alt="travel" /></li>
+        <li><img src="imgs/guardian.svg" alt="guardian" /></li>
+      </ul>
+    </nav>
+
+    <div class="section3">
+      <div class="image-container">
+        <img src="imgs/blackwoman.svg" alt="woman" />
+        <p class="caption">Skincare Savior</p>
+        <p class="sub-caption">
+          Upgrade your routine with prestige formulas for every skin type
+        </p>
+      </div>
+      <div class="image-container">
+        <img id="towel" src="imgs/towel.svg" alt="towel" />
+        <p class="caption">Make Yourself at Home</p>
+        <p class="sub-caption">
+          Transform your space with plush bath towels and cozy bores to rival
+          any<br />
+          resort.
+        </p>
+      </div>
+    </div>
+
+    <div class="section4">
+      <div class="sub-section4">
+        <p class="sub-section4-title">New arrivals.</p>
+        <p class="sub-section4-dsc">
+          Explore new-in products and future bestsellers.
+        </p>
+        <div class="sub-section4-btn">
+          <a href="#" class="sub-section4-button">Shop New Arrivals</a>
+        </div>
+      </div>
+
+      <div class="cards">
+        <!-- FIRST CARD -->
+
+        <div class="card">
+          <div class="new-label">
+            <p>NEW</p>
+          </div>
+
+          <div class="card-bk">
+            <img src="imgs/earrings.svg" alt="earrings" />
+          </div>
+
+          <div class="card-btn">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc">
+            <p class="card-dsc-title1">
+              14k Solid Gold Diamond Drop<br />
+              Chain Earrings
+            </p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Van Cleef</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">BVLGARI</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$315</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+
+        <!-- SECOND CARD -->
+
+        <div class="card">
+          <div class="new-label">
+            <p>NEW</p>
+          </div>
+
+          <div class="card-bk">
+            <img src="imgs/necklace.svg" alt="earrings" />
+          </div>
+
+          <div class="card-btn">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc">
+            <p class="card-dsc-title1">14k Solid Gold Interlocking Necklace</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Van Cleef</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">BVLGARI</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$350</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+
+        <!-- THIRD CARD -->
+
+        <div class="card">
+          <div class="new-label">
+            <p>NEW</p>
+          </div>
+
+          <div class="card-bk">
+            <img src="imgs/ring.webp" alt="earrings" />
+          </div>
+
+          <div class="card-btn">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc">
+            <p class="card-dsc-title1">14k Solid Gold Diamond Ring</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Van Cleef</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">BVLGARI</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$500</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section5">
+      <img src="imgs/flower_logo.svg" alt="flower_logo" />
+    </div>
+
+    <div class="section6">
+      <div class="section6-title"><p>HIIT Refresh</p></div>
+
+      <div class="section6-subsection">
+        <p class="section6-subtitle">
+          Take your workouts to the next level with supremely soft activewear
+          that's made to move with you.
+        </p>
+        <a href="#">Discover More</a>
+      </div>
+    </div>
+
+    <div class="section7">
+      <div class="girl1"><img src="imgs/girl1.png" alt="Girl1" /></div>
+      <div class="section7-sub">
+        <div class="section7-grid">
+          <!-- FIRST CARD -->
+
+          <div class="card card-v2">
+            <div class="card-bk card-bk-v2">
+              <img src="imgs/girl2.png" alt="girl2" />
+            </div>
+
+            <div class="card-btn card-btn-v2">
+              <img src="imgs/buttonlabel.svg" alt="label" />
+              <a href="#">Quick View</a>
+            </div>
+
+            <div class="card-dsc card-dsc-v2">
+              <p class="card-dsc-title1">Aura Contour Jacket</p>
+              <p class="card-dsc-title2">Same manufacturer as</p>
+
+              <div class="card-dsc-sub">
+                <p class="card-dsc-sub-title">Vilebrequin</p>
+                <img src="imgs/dot.svg" alt="dot" />
+                <p class="card-dsc-sub-title">Stella McCartney</p>
+              </div>
+
+              <div class="card-dsc-sub">
+                <p class="card-dsc-sub-title2">$58</p>
+                <p class="card-dsc-sub-title3">2 COLORS</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECOND CARD -->
+
+          <div class="card card-v2">
+            <div class="card-bk card-bk-v2">
+              <img src="imgs/girl3.png" alt="girl2" />
+            </div>
+
+            <div class="card-btn card-btn-v2">
+              <img src="imgs/buttonlabel.svg" alt="label" />
+              <a href="#">Quick View</a>
+            </div>
+
+            <div class="card-dsc card-dsc-v2">
+              <p class="card-dsc-title1">Aura Active Sports Tank</p>
+              <p class="card-dsc-title2">Same manufacturer as</p>
+
+              <div class="card-dsc-sub">
+                <p class="card-dsc-sub-title">Vilebrequin</p>
+                <img src="imgs/dot.svg" alt="dot" />
+                <p class="card-dsc-sub-title">Stella McCartney</p>
+              </div>
+
+              <div class="card-dsc-sub">
+                <p class="card-dsc-sub-title2">$39</p>
+                <p class="card-dsc-sub-title3">1 COLOR</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- THIRD CARD -->
+
+          <div class="card card-v2">
+            <div class="card-bk card-bk-v2">
+              <img src="imgs/girl4.png" alt="girl2" />
+            </div>
+
+            <div class="card-btn card-btn-v2">
+              <img src="imgs/buttonlabel.svg" alt="label" />
+              <a href="#">Quick View</a>
+            </div>
+
+            <div class="card-dsc card-dsc-v2">
+              <p class="card-dsc-title1">Aura Active Bodysuit</p>
+              <p class="card-dsc-title2">Same manufacturer as</p>
+
+              <div class="card-dsc-sub">
+                <p class="card-dsc-sub-title">Vilebrequin</p>
+                <img src="imgs/dot.svg" alt="dot" />
+                <p class="card-dsc-sub-title">Stella McCartney</p>
+              </div>
+
+              <div class="card-dsc-sub">
+                <p class="card-dsc-sub-title2">$65</p>
+                <p class="card-dsc-sub-title3">2 COLORS</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOURTH CARD -->
+
+          <div class="card card-v2">
+            <div class="new-label trending-label">
+              <p>TRENDING</p>
+            </div>
+
+            <div class="card-bk card-bk-v2">
+              <img src="imgs/girl5.png" alt="girl2" />
+            </div>
+
+            <div class="card-btn card-btn-v2">
+              <img src="imgs/buttonlabel.svg" alt="label" />
+              <a href="#">Quick View</a>
+            </div>
+
+            <div class="card-dsc card-dsc-v2">
+              <p class="card-dsc-title1">Aura Racerback Sports Bra</p>
+              <p class="card-dsc-title2">Same manufacturer as</p>
+
+              <div class="card-dsc-sub">
+                <p class="card-dsc-sub-title">Vilebrequin</p>
+                <img src="imgs/dot.svg" alt="dot" />
+                <p class="card-dsc-sub-title">Stella McCartney</p>
+              </div>
+
+              <div class="card-dsc-sub">
+                <p class="card-dsc-sub-title2">$25</p>
+                <p class="card-dsc-sub-title3">4 COLORS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section8">
+      <p class="section8-title">Explore even more.</p>
+      <div class="section8-sub">
+        <div class="section8-sub2">
+          <img src="imgs/girl11.png" alt="girl11" />
+          <p>Women's Clothing</p>
+        </div>
+        <div class="section8-sub2">
+          <img src="imgs/girl12.png" alt="girl12" />
+          <p>Bath</p>
+        </div>
+        <div class="section8-sub2">
+          <img src="imgs/girl13.png" alt="girl13" />
+          <p>Kitchen</p>
+        </div>
+        <div class="section8-sub2">
+          <img src="imgs/girl14.png" alt="girl14" />
+          <p>Bedding</p>
+        </div>
+        <div class="section8-sub2">
+          <img src="imgs/girl15.png" alt="girl15" />
+          <p>Men's Clothing</p>
+        </div>
+        <div class="section8-sub2">
+          <img src="imgs/girl16.png" alt="girl16" />
+          <p>Jewelry</p>
+        </div>
+        <div class="section8-sub2">
+          <img src="imgs/girl17.png" alt="girl17" />
+          <p>Skincare</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section9">
+      <div class="section9-sub">
+        <img src="imgs/section9-img1.png" alt="knives" />
+        <p class="section9-title">Cookware to Count On</p>
+        <p class="section9-subtitle">
+          Upgrade your meal prep and stick to your resolutions with Italic
+          cookware.
+        </p>
+      </div>
+      <div class="section9-sub">
+        <img src="imgs/section9-img2.png" alt="pillows" />
+        <p class="section9-title">Indulgent Bedding</p>
+        <p class="section9-subtitle">
+          From breathable flax linen to silky luxe sateen, cozy up to bedding
+          essentials for everyone.
+        </p>
+      </div>
+    </div>
+
+    <div class="section10">
+      <div class="section10-sub">
+        <p class="section10-title">Atelier Series</p>
+        <p class="section10-subtitle">
+          The capstone of luxury,<br />with each piece<br />representing the
+          pinnacle<br />
+          of fine materials, master<br />craftsmanship, and<br />timeless
+          design.
+        </p>
+        <a href="">Show Now</a>
+      </div>
+      <div class="section10-sub">
+        <img src="imgs/section10-img.png" alt="girl" />
+      </div>
+    </div>
+
+    <div class="section11">
+      <p class="section11-title">Trending</p>
+      <div class="section11-sub">
+        <!-- FIRST CARD -->
+
+        <div class="card card-v3">
+          <div class="new-label trending-label">
+            <p>TRENDING</p>
+          </div>
+
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/section11-img1.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Rafa Backpack</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECOND CARD -->
+
+        <div class="card card-v3">
+          <div class="new-label atelier-label">
+            <p>ATELIER</p>
+          </div>
+
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/section11-img2.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Cleo Oversized Cashmere Scarf</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- THIRD CARD -->
+
+        <div class="card card-v3">
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/section11-img3.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Aluminum Carry-On Suitcase</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOURTH CARD -->
+
+        <div class="card card-v3">
+          <div class="new-label atelier-label">
+            <p>ATELIER</p>
+          </div>
+
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/section11-img4.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Amara Cashmere Wrap</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FIFTH CARD -->
+
+        <div class="card card-v3">
+          <div class="new-label atelier-label">
+            <p>ATELIER</p>
+          </div>
+
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/section11-img5.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Priscilla Silk Halter Mini Dress</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIXTH CARD -->
+
+        <div class="card card-v3">
+          <div class="new-label atelier-label">
+            <p>ATELIER</p>
+          </div>
+
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/girl2.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Aura Contour Jacket</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section12">
+      <div class="section12-sub">
+        <p class="section12-title">What we value most.</p>
+
+        <div class="section12-blocks">
+          <div class="section12-block">
+            <p class="section12-subtitle">Atelier-Grade Materials</p>
+            <p class="section12-subtitle2">
+              Fine, rare materials for optimal performance and durability.
+            </p>
+            <img src="/imgs/section12-img1.png" alt="" />
+          </div>
+
+          <div class="section12-block">
+            <p class="section12-subtitle">Radical Value</p>
+            <p class="section12-subtitle2">
+              We believe luxury is defined by the quality of product, not by the
+              price tag.
+            </p>
+            <img src="/imgs/section12-img2.png" alt="" />
+          </div>
+
+          <div class="section12-block">
+            <p class="section12-subtitle">World-Class Craftsmanship</p>
+            <p class="section12-subtitle2">
+              The world's best manufacturers, the same as top luxury brands.
+            </p>
+            <img src="/imgs/section12-img3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section13">
+      <div class="section13-sub">
+        <img src="/imgs/section13-img1.png" alt="" />
+        <p class="section9-title">The Pet Edit</p>
+        <p class="section9-subtitle">
+          Your best friend deserves the best. Pamper them with Italic’s pet
+          essentials.
+        </p>
+      </div>
+      <div class="section13-sub">
+        <img src="/imgs/section13-img2.png" alt="" />
+        <p class="section9-title">A Winning Combination</p>
+        <p class="section9-subtitle">
+          Shop our most popular pairings and enjoy the savings offered through
+          these curated bundles.
+        </p>
+      </div>
+    </div>
+
+    <div class="section11">
+      <p class="section11-title">You might like.</p>
+      <div class="section11-sub">
+        <!-- FIRST CARD -->
+
+        <div class="card card-v3">
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/section11-img6.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Rafa Backpack</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECOND CARD -->
+
+        <div class="card card-v3">
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/section11-img7.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Cleo Oversized Cashmere Scarf</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- THIRD CARD -->
+
+        <div class="card card-v3">
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/section11-img8.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Aluminum Carry-On Suitcase</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOURTH CARD -->
+
+        <div class="card card-v3">
+          <div class="new-label atelier-label">
+            <p>ATELIER</p>
+          </div>
+
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/section11-img9.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Amara Cashmere Wrap</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FIFTH CARD -->
+
+        <div class="card card-v3">
+          <div class="new-label atelier-label">
+            <p>ATELIER</p>
+          </div>
+
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/section11-img10.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Priscilla Silk Halter Mini Dress</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIXTH CARD -->
+
+        <div class="card card-v3">
+          <div class="card-bk card-bk-v3">
+            <img src="imgs/girl2.png" alt="girl2" />
+          </div>
+
+          <div class="card-btn card-btn-v3">
+            <img src="imgs/buttonlabel.svg" alt="label" />
+            <a href="#">Quick View</a>
+          </div>
+
+          <div class="card-dsc card-dsc-v3">
+            <p class="card-dsc-title1">Aura Contour Jacket</p>
+            <p class="card-dsc-title2">Same manufacturer as</p>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title">Vilebrequin</p>
+              <img src="imgs/dot.svg" alt="dot" />
+              <p class="card-dsc-sub-title">Stella McCartney</p>
+            </div>
+
+            <div class="card-dsc-sub">
+              <p class="card-dsc-sub-title2">$58</p>
+              <p class="card-dsc-sub-title3">2 COLORS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section14">
+      <p class="section14-title">Impressing the press.</p>
+      <div class="section14-sub">
+        <p class="section14-sub-title section14-sub-title2">
+          “Quality is superior to what you can find on<br />other online
+          retailers.”
+        </p>
+
+        <p class="section14-sub-title">
+          “Luxury goods from Prada and Gucci are<br />marked up because of their
+          branding. This<br />startup will sell them to you without the labels.”
+        </p>
+
+        <p class="section14-sub-title section14-sub-title2">
+          “A radical business selling quality goods<br />without the middleman
+          markup.”
+        </p>
+      </div>
+      <div class="section14-vec">
+        <img src="/imgs/thewallstreet.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="section15">
+      <p class="section15-title">Our commitment to quality.</p>
+      <p class="section15-subtitle">
+        It all starts with our goal of making luxury-level products
+        accessible<br />
+        to all. Whether it’s sourcing Grade A cashmere from Mongolia or<br />
+        devoting hundreds of hours of wear-testing to develop the perfect<br />
+        leather sneakers — we won’t sell it until we love it.
+      </p>
+    </div>
+
+    <div class="section16"></div>
+
+    <div class="section17">
+      <div class="section17-sub">
+        <p class="section17-title">Atelier Quality</p>
+        <p class="section17-subtitle">
+          Responsibly produced by the same<br />
+          manufacturers as top luxury brands to<br />
+          ensure world-class construction.
+        </p>
+      </div>
+      <div class="section17-sub">
+        <p class="section17-title">Exceptional Materials</p>
+        <p class="section17-subtitle">
+          Sourcing the world’s finest materials<br />
+          with an uncompromising focus on<br />
+          gradation, performance, and durability.
+        </p>
+      </div>
+      <div class="section17-sub">
+        <p class="section17-title">Timeless Design</p>
+        <p class="section17-subtitle">
+          Recreating everyday essentials with<br />
+          subtle, considered details. Designed to<br />
+          improve the modern, elevated lifestyle.
+        </p>
+      </div>
+    </div>
+
+    <div class="section18">
+      <div class="section18-sub1">
+        <p class="section18-title">Stay in touch.</p>
+        <p class="section18-subtitle">
+          Sign up to be the first to know<br />
+          about new collections and<br />
+          exclusive events.
+        </p>
+        <div class="section18-sub1-sub">
+          <input type="text" class="section18-input" />
+          <a href="#" class="section18-btn">Submit</a>
+        </div>
+      </div>
+
+      <div class="section18-sub2">
+        <div class="section18-sub2-sub">
+          <p>Company</p>
+          <a href="#">Our Story</a>
+          <a href="#">Corporate Gifts</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="section18-sub2-sub">
+          <p>Services</p>
+          <a href="#">Membership</a>
+          <a href="#">FAQs</a>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Returns</a>
+          <a href="#">Track Orders</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="section18-sub2-sub">
+          <p>Guides</p>
+          <a href="#">The Cashmere Guide</a>
+          <a href="#">Resort-Grade Bedding</a>
+          <a href="#">Guide to Fine Jewelry</a>
+          <a href="#">Beauty Guide</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section19">
+      <div class="section19-sub1">
+        <img src="imgs/section19-img1.svg" alt="" />
+        <p>© 2023 Italic, Inc. All Rights Reserved.</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+      </div>
+      <div class="section19-sub2">
+        <img src="imgs/section19-img2.svg" alt="" />
+        <img src="imgs/section19-img3.svg" alt="" />
+        <img src="imgs/section19-img4.svg" alt="" />
+        <img src="imgs/section19-img5.svg" alt="" />
+        <img src="imgs/section19-img6.svg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

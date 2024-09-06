@@ -1,0 +1,826 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header1 {
+  background-color: #383230;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+
+  display: flex;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.header1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.header1_section1 {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  gap: 1vw;
+}
+
+.navigation {
+  display: flex;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  justify-content: space-between;
+  font-size: 1em;
+  align-items: center;
+  background-color: rgba(254, 253, 252, 1);
+
+  font-family: "Inter", sans-serif;
+}
+
+.navigation_section1 {
+  display: flex;
+  margin-left: 10vw;
+}
+
+.navigation_section2 {
+  display: flex;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation a {
+  text-align: center;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  text-decoration: none;
+  color: rgba(56, 50, 48, 1);
+}
+
+.navigation_section3 {
+  display: flex;
+  margin-right: 10vw;
+  gap: 1vw;
+}
+
+.section1 {
+  background-color: rgba(249, 247, 244, 1);
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+  font-size: 4em;
+  padding: 1vh 1vw;
+  text-align: center;
+}
+
+.main-picture {
+  background-image: url("imgs/main_frame.svg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: bottom;
+  height: 800px;
+  width: 100%;
+}
+
+.section2 {
+  background-color: rgba(254, 253, 252, 1);
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+
+  font-size: 1.5em;
+  padding: 10vh 36vw;
+  text-align: center;
+}
+
+.learn-more {
+  font-size: 0.5em;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  color: rgba(0, 0, 0, 1);
+  font-family: "Inter", sans-serif;
+  padding-bottom: 10vh;
+}
+
+.labels {
+  padding: 5vh 25vw;
+  background-color: rgba(249, 247, 244, 1);
+}
+
+.labels ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top: 100px;
+}
+
+.section3 img {
+  width: 605px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.caption {
+  font-family: "EB Garamond", serif;
+  font-size: 25px;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.sub-caption {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.section4 {
+  display: flex;
+  margin-left: 10vw;
+  margin-top: 118px;
+}
+
+.sub-section4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-section4-title {
+  font-size: 36px;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 31px;
+}
+
+.sub-section4-dsc {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin-top: 0;
+  padding-bottom: 40px;
+  margin-bottom: 0px;
+}
+
+.sub-section4-button {
+  border: 1px solid;
+  padding: 12px 16px;
+  margin-top: 0;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+}
+
+.sub-section4-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.cards {
+  margin-left: 309px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  gap: 10px;
+}
+
+.card {
+  display: inline-block;
+  flex-direction: column;
+  height: 460px;
+  width: 100%;
+  position: relative;
+}
+
+.new-label {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 21px;
+  height: 12px;
+  padding: 1px 5px;
+
+  background-color: white;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+}
+
+.trending-label {
+  width: 50px;
+  height: 15px;
+}
+
+.atelier-label {
+  background-color: rgba(129, 122, 112, 1);
+  width: 45px;
+  height: 15px;
+  color: white;
+}
+
+.card-bk img {
+  width: 287px;
+  height: 287px;
+}
+
+.card-dsc {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 15px;
+  position: relative;
+  bottom: 40px;
+  border-bottom: 2px rgba(240, 236, 227, 1) solid;
+  border-left: 2px rgba(240, 236, 227, 1) solid;
+  border-right: 2px rgba(240, 236, 227, 1) solid;
+  height: 140px;
+}
+
+.card-dsc > * {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.card-dsc-sub {
+  display: flex;
+  gap: 6px;
+}
+
+.card-dsc-title1 {
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+}
+
+.card-dsc-title2 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: rgba(140, 140, 140, 1);
+  margin-top: 10px;
+}
+
+.card-dsc-sub-title {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.card-dsc-sub-title2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+}
+
+.card-dsc-sub-title3 {
+  color: rgba(140, 140, 140, 1);
+  font-size: 11px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.card-btn {
+  border: 1px solid;
+  width: 257px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 30px;
+  left: 15px;
+  background-color: white;
+}
+
+.card-btn a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  margin-left: 4px;
+  color: black;
+}
+
+.section5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 10vw;
+  gap: 10px;
+}
+
+.section5::after {
+  content: "";
+  height: 2px;
+  width: 45vw;
+  background-color: black;
+}
+
+.section5::before {
+  content: "";
+  height: 2px;
+  width: 45vw;
+  background-color: black;
+}
+
+.section6 {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-bottom: 40px;
+}
+
+.section6-title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: "EB Garamond", serif;
+  font-size: 31px;
+}
+
+.section6-subsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.section6-subtitle {
+  font-size: 15px;
+}
+
+.section6-subsection a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  border: 1px black solid;
+  font-size: 14px;
+}
+
+.section7 {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  padding-bottom: 118px;
+}
+
+.girl1 img {
+  width: 850px;
+  height: 1035px;
+}
+
+.section7-sub {
+  display: flex;
+}
+
+.section7-grid {
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 50px;
+  row-gap: 35px;
+}
+
+.card-v2 {
+  height: 200px;
+  width: 258px;
+}
+
+.card-dsc-v2 {
+  height: 170px;
+  width: 285px;
+}
+
+.card-bk-v2 img {
+  height: 310px;
+  width: 310px;
+}
+
+.card-btn-v2 {
+  width: 278px;
+}
+
+.card-v3 {
+  height: 200px;
+  width: 250px;
+}
+
+.card-dsc-v3 {
+  height: 150px;
+  width: 226px;
+}
+
+.card-bk-v3 img {
+  height: 250px;
+  width: 250px;
+}
+
+.card-btn-v3 {
+  width: 220px;
+}
+
+.section8 {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 118px;
+}
+
+.section8-title {
+  font-size: 28px;
+  font-family: "EB Garamond", serif;
+}
+
+.section8-sub {
+  display: flex;
+  gap: 10px;
+}
+
+.section8-sub2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.section8-sub2 > img {
+  width: 208px;
+  height: 260px;
+}
+
+.section9 {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  padding-bottom: 118px;
+  gap: 0px 40px;
+}
+
+.section9-sub {
+  display: flex;
+  flex-direction: column;
+}
+
+.section9-sub > img {
+  width: 738px;
+}
+
+.section9-title {
+  font-size: 25px;
+  font-family: "EB Garamond", serif;
+  margin: 10px 0px;
+}
+
+.section9-subtitle {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  margin: 10px 0px;
+  font-weight: 300;
+}
+
+.section10 {
+  padding: 80px 10vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(249, 247, 244, 1);
+}
+
+.section-sub {
+  display: flex;
+  flex-direction: column;
+}
+
+.section10-title {
+  color: rgba(129, 122, 112, 1);
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.section10-subtitle {
+  font-family: "EB Garamond", serif;
+  font-size: 34px;
+}
+
+.section10-sub > a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(56, 50, 48, 1);
+  padding: 11px 15px;
+}
+
+.section11 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.section11-title {
+  font-size: 30px;
+  font-family: "EB Garamond", serif;
+}
+
+.section11-sub {
+  display: flex;
+  height: 420px;
+  gap: 10px;
+  overflow: auto;
+}
+
+.section12 {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10vw;
+  padding-bottom: 80px;
+  background-color: rgba(249, 247, 244, 1);
+}
+
+.section12-title {
+  font-size: 30px;
+  font-family: "EB Garamond", serif;
+}
+
+.section12-sub {
+  display: flex;
+  flex-direction: column;
+}
+
+.section12-blocks {
+  display: flex;
+  gap: 21px;
+}
+
+.section12-block {
+  display: flex;
+  flex-direction: column;
+  padding: 31px 31px;
+  border: black solid 2px;
+}
+
+.section12-block > img {
+  width: 410px;
+  height: 410px;
+}
+
+.section12-subtitle {
+  font-family: "EB Garamond", serif;
+  font-size: 21px;
+  margin: 0px 0px;
+}
+
+.section12-subtitle2 {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  margin: 20px 0px;
+}
+
+.section13 {
+  display: flex;
+  padding: 41px 10vw;
+  gap: 40px;
+}
+
+.section13-sub {
+  display: flex;
+  flex-direction: column;
+}
+
+.section13-sub > img {
+  height: 500px;
+  width: 740px;
+}
+
+.section14 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.section14 img {
+  margin-top: 42px;
+  width: 400px;
+  height: 40px;
+}
+
+.section14-sub {
+  display: flex;
+  gap: 60px;
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.section14-sub > p {
+  text-align: center;
+}
+
+.section14-title {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(129, 122, 112, 1);
+}
+
+.section14-sub-title {
+  font-size: 34px;
+  font-family: "EB Garamond", serif;
+}
+
+.section14-sub-title2 {
+  color: rgba(197, 197, 197, 1);
+}
+
+.section14-vec {
+  display: flex;
+  justify-content: center;
+}
+
+.section15 {
+  display: flex;
+  flex-direction: column;
+  padding: 80px auto;
+  background-color: rgba(249, 247, 244, 1);
+}
+
+.section15-title {
+  color: rgba(129, 122, 112, 1);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section15-subtitle {
+  text-align: center;
+  font-size: 46px;
+  font-family: "EB Garamond", serif;
+}
+
+.section16 {
+  padding: 0px;
+  margin: 0px;
+  background-image: url("/imgs/section16-img.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+
+.section17 {
+  padding: 80px 10vw;
+  background-color: rgba(254, 253, 252, 1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.section17-sub {
+  display: flex;
+  flex-direction: column;
+}
+
+.section17-title {
+  font-family: "EB Garamond", serif;
+  color: rgba(56, 50, 48, 1);
+  font-size: 35px;
+  margin: 0px;
+}
+
+.section17-subtitle {
+  font-size: 25px;
+  font-family: "EB Garamond", serif;
+  color: rgba(129, 122, 112, 1);
+}
+
+.section18 {
+  display: flex;
+  justify-content: space-between;
+  gap: 155px;
+  padding: 80px 10vw;
+  background-color: rgba(56, 50, 48, 1);
+}
+
+.section18-sub1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.section18-sub2 {
+  display: flex;
+  gap: 150px;
+}
+
+.section18-sub1-sub {
+  display: flex;
+  gap: 8px;
+}
+
+.section18-sub2-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section18-title {
+  font-size: 48px;
+  font-family: "EB Garamond", serif;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.section18-subtitle {
+  font-size: 24px;
+  font-family: "EB Garamond", serif;
+  color: rgba(224, 219, 210, 1);
+}
+
+.section18-sub2-sub > p {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgba(129, 122, 112, 1);
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.section18-sub2-sub > a {
+  text-decoration: none;
+  color: rgba(224, 219, 210, 1);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.section18-input {
+  background-color: rgba(56, 50, 48, 1);
+  border-color: rgba(140, 140, 140, 1);
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  font-family: "EB Garamond", serif;
+}
+
+.section18-btn {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: rgba(56, 50, 48, 1);
+  background-color: white;
+  padding: 18px 15px;
+  border-radius: 3px;
+}
+
+.section19 {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 10vw;
+  background-color: rgba(56, 50, 48, 1);
+}
+
+.section19-sub1 {
+  display: flex;
+  gap: 15px;
+}
+
+.section19-sub1 > p {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: rgba(140, 140, 140, 1);
+  font-family: "Inter", sans-serif;
+}
+
+.section19-sub2 {
+  display: flex;
+  gap: 20px;
+}
+
+.section19-sub2 > img {
+  width: 20px;
+  height: 20px;
+}

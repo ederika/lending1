@@ -1,1 +1,1 @@
-Demo: https://ederika.github.io/lending1/
+[Demo link](https://ederika.github.io/lending1/)
